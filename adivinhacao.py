@@ -22,8 +22,9 @@ while True:
             print('Você errou! O seu chute foi maior do que o número secreto.')
         if numero_menor:
             print('Você errou! O seu chute foi menor do que o número secreto.')
-
-    m = input('Você deseja continuar?[Sim/Não]').strip().lower()
+    print('Fim do jogo!')
+    #to exit
+    m = input('Você deseja continuar?[S/N]').strip().lower()
     while m not in 'simnão':
         m = str(input('Erro: comando não reconhecido'))
     if m == 'sim':
