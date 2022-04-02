@@ -25,9 +25,9 @@ while True:
     print('Fim do jogo!')
     #to exit
     m = input('Você deseja continuar?[S/N]').strip().lower()
-    while m not in 'simnão':
+    while m not in 'sn':
         m = str(input('Erro: comando não reconhecido'))
-    if m == 'sim':
+    if m == 's':
         continue
     else:
         break
