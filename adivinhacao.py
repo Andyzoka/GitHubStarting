@@ -19,6 +19,10 @@ while True:
     usuario_acertou = adivinhacao == numero_secreto
     numero_maior = adivinhacao > numero_secreto
     numero_menor = adivinhacao < numero_secreto
+    
+    if adivinhacao <= 0 or adivinhacao >100:
+        print('Error: Você deve digitar um número entre 1 e 100!')
+        continue
 
     if usuario_acertou:
         print('Parabéns! Você acertou!! :D')
